@@ -19,8 +19,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
-            app:lottie_rawRes="@raw/igualdad"
+            android:background="#FBFAFA"
+            app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_autoPlay="true"></com.airbnb.lottie.LottieAnimationView>
+            app:lottie_rawRes="@raw/igualdad"></com.airbnb.lottie.LottieAnimationView>
     </RelativeLayout>
 </layout>
