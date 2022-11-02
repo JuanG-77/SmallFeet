@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.activities.LoginActivity"
+    android:background="@color/fondo">
+
+    <ImageView
+        android:id="@+id/ivlogo"
+        android:layout_width="389dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="344dp"
+        app:layout_constraintBottom_toTopOf="@+id/btrecuperar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112"
+        app:srcCompat="@drawable/logotienda" />
+
+    <EditText
+        android:id="@+id/tvemail"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email o User"
+        android:fontFamily="@font/alegreyaitalic"
+        android:background="@drawable/estiloborde_editext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523" />
+
+
+    <EditText
+        android:id="@+id/tvclave"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Password"
+        android:fontFamily="@font/alegreyaitalic"
+        android:background="@drawable/estiloborde_editext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvemail"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <Button
+        android:id="@+id/btinicio"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:text="Iniciar Sesión"
+        android:fontFamily="@font/alegreyabold"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/estiloborde_botton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvclave"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <TextView
+        android:id="@+id/btrecuperar"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="34dp"
+        android:text="Recuperar contraseña"
+        android:fontFamily="@font/alegreyaitalic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivlogo" />
+
+    <Button
+        android:id="@+id/btregistro"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="84dp"
+        android:text="Registrarse"
+        android:fontFamily="@font/alegreyabold"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/estiloborde_botton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btinicio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.activities.RegistroActivity"
+    android:background="@color/fondo">
+
+    <ImageView
+        android:id="@+id/ivlogoregistro"
+        android:layout_width="342dp"
+        android:layout_height="167dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062"
+        app:srcCompat="@drawable/logotienda" />
+
+    <TextView
+        android:id="@+id/tvregistro"
+        android:layout_width="149dp"
+        android:layout_height="41dp"
+        android:text="Registro"
+        android:fontFamily="@font/alegreyaitalic"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/tvnombre"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="396dp"
+        android:hint="Nombre Completo"
+        android:fontFamily="@font/alegreyaitalic"
+        android:background="@drawable/estiloborde_editext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvcorreo"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:hint="Correo Electrónico"
+        android:fontFamily="@font/alegreyaitalic"
+        android:background="@drawable/estiloborde_editext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <TextView
+        android:id="@+id/tvcontraseña"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="264dp"
+        android:hint="Password"
+        android:fontFamily="@font/alegreyaitalic"
+        android:background="@drawable/estiloborde_editext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvfnacimiento"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="196dp"
+        android:hint="Fecha Nacimiento"
+        android:fontFamily="@font/alegreyaitalic"
+        android:background="@drawable/estiloborde_editext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btregistro"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="124dp"
+        android:text="Registrarse"
+        android:fontFamily="@font/alegreyabold"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/estiloborde_botton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
