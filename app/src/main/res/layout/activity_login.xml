@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/ivlogo"
-        android:layout_width="389dp"
-        android:layout_height="0dp"
+        android:layout_width="666dp"
+        android:layout_height="570dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="344dp"
         app:layout_constraintBottom_toTopOf="@+id/btrecuperar"
