@@ -4,19 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context=".ComprasFragment"
+    tools:context=".nino2Fragment"
     android:orientation="vertical"
     android:background="@color/fondo">
-
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ComprasFragment">
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         android:orientation="vertical">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -32,18 +26,4 @@
             </ImageView>
         </RelativeLayout>
     </LinearLayout>
-
-        android:text="COMPRAS" />
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/buttonnavigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="650dp"
-        android:background="@color/color_centro"
-        app:itemIconTint="@color/black"
-        app:menu="@menu/menu_navigation_bar">
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-
 </FrameLayout>

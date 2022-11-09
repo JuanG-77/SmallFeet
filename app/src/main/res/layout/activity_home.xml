@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".view.ui.activities.HomeActivity">
 
     <fragment
@@ -16,7 +17,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:defaultNavHost="true"
+
+        app:navGraph="@navigation/nav_grahn"
+        >
+
         app:navGraph="@navigation/nav_grahn">
+
 
     </fragment>
 

@@ -9,66 +9,67 @@
 
     <ImageView
         android:id="@+id/ivlogoregistro"
-        android:layout_width="342dp"
-        android:layout_height="167dp"
+        android:layout_width="408dp"
+        android:layout_height="226dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.062"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logotienda" />
 
     <TextView
         android:id="@+id/tvregistro"
         android:layout_width="149dp"
         android:layout_height="41dp"
-        android:text="Registro"
         android:fontFamily="@font/alegreyaitalic"
+        android:text="Registro"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.336" />
+        app:layout_constraintVertical_bias="0.349" />
 
     <TextView
         android:id="@+id/tvnombre"
         android:layout_width="290dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="396dp"
-        android:hint="Nombre Completo"
-        android:fontFamily="@font/alegreyaitalic"
+        android:layout_marginBottom="376dp"
         android:background="@drawable/estiloborde_editext"
+        android:fontFamily="@font/alegreyaitalic"
+        android:hint="Nombre Completo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tvcorreo"
         android:layout_width="290dp"
         android:layout_height="50dp"
-        android:hint="Correo Electrónico"
-        android:fontFamily="@font/alegreyaitalic"
         android:background="@drawable/estiloborde_editext"
+        android:fontFamily="@font/alegreyaitalic"
+        android:hint="Correo Electrónico"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.515" />
+        app:layout_constraintVertical_bias="0.552" />
 
     <TextView
         android:id="@+id/tvcontraseña"
         android:layout_width="290dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="264dp"
-        android:hint="Password"
-        android:fontFamily="@font/alegreyaitalic"
+        android:layout_marginBottom="228dp"
         android:background="@drawable/estiloborde_editext"
+        android:fontFamily="@font/alegreyaitalic"
+        android:hint="Password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
@@ -78,27 +79,29 @@
         android:id="@+id/tvfnacimiento"
         android:layout_width="290dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="196dp"
-        android:hint="Fecha Nacimiento"
-        android:fontFamily="@font/alegreyaitalic"
+        android:layout_marginBottom="160dp"
         android:background="@drawable/estiloborde_editext"
+        android:fontFamily="@font/alegreyaitalic"
+        android:hint="Fecha Nacimiento"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btregistro"
         android:layout_width="290dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="124dp"
-        android:text="Registrarse"
-        android:fontFamily="@font/alegreyabold"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="20dp"
+        android:layout_marginBottom="88dp"
         android:background="@drawable/estiloborde_botton"
+        android:fontFamily="@font/alegreyabold"
+        android:text="Registrarse"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
