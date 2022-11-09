@@ -10,8 +10,7 @@
     <ImageView
         android:id="@+id/ivlogo"
 
-        android:layout_width="339dp"
-        android:layout_height="298dp"
+
 
         android:layout_width="505dp"
         android:layout_height="228dp"
@@ -22,7 +21,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btrecuperar"
         app:layout_constraintEnd_toEndOf="parent"
 
-        app:layout_constraintHorizontal_bias="0.493"
+
 
         app:layout_constraintHorizontal_bias="0.502"
 
@@ -86,8 +85,6 @@
         android:layout_height="33dp"
         android:layout_marginBottom="34dp"
 
-        android:fontFamily="@font/alegreyaitalic"
-        android:text="Recuperar contraseña"
 
         android:background="@color/color_secundario"
         android:fontFamily="@font/alegreyaitalic"

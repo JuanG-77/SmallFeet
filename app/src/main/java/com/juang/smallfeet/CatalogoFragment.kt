@@ -11,7 +11,7 @@ import androidx.navigation.fragment.findNavController
 
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-
+import com.juang.smallfeet.R.id.action_catalogoFragment_to_nina1Fragment
 
 
 class CatalogoFragment : Fragment() {
@@ -39,30 +39,5 @@ class CatalogoFragment : Fragment() {
     }
 
 
-        val cardNina1 = view.findViewById<ImageView>(R.id.cardNinaelegante)
-        cardNina1.setOnClickListener {
-            findNavController().navigate(R.id.action_catalogoFragment_to_nina1Fragment)
-        }
-        val cardNina2 = view.findViewById<ImageView>(R.id.cardNinaTenis)
-        cardNina2.setOnClickListener {
-            findNavController().navigate(R.id.action_catalogoFragment_to_nina2Fragment)
-        }
-        val cardNina3 = view.findViewById<ImageView>(R.id.cardNinatenisdos)
-        cardNina3.setOnClickListener {
-            findNavController().navigate(R.id.action_catalogoFragment_to_nina3Fragment)
-        }
-        val cardNino1 = view.findViewById<ImageView>(R.id.cardNinoElegante)
-        cardNino1.setOnClickListener {
-            findNavController().navigate(R.id.action_catalogoFragment_to_nino1Fragment)
-        }
-        val cardNino2 = view.findViewById<ImageView>(R.id.cardNinoBotas)
-        cardNino2.setOnClickListener {
-            findNavController().navigate(R.id.action_catalogoFragment_to_nino2Fragment)
-        }
-        val cardNino3 = view.findViewById<ImageView>(R.id.cardNinoTenis)
-        cardNino3.setOnClickListener {
-            findNavController().navigate(R.id.action_catalogoFragment_to_nino3Fragment)
-        }
 
-    }
 }
