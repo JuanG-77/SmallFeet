@@ -9,17 +9,27 @@
 
     <ImageView
         android:id="@+id/ivlogo"
+
         android:layout_width="339dp"
         android:layout_height="298dp"
+
+        android:layout_width="505dp"
+        android:layout_height="228dp"
+
         android:layout_marginTop="50dp"
         android:layout_marginBottom="344dp"
+        android:background="#A3606D"
         app:layout_constraintBottom_toTopOf="@+id/btrecuperar"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintHorizontal_bias="0.493"
+
+        app:layout_constraintHorizontal_bias="0.502"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.112"
-        app:srcCompat="@drawable/logotienda" />
+        app:srcCompat="@mipmap/ic_launcher_round" />
 
     <EditText
         android:id="@+id/tvemail"
@@ -72,11 +82,19 @@
 
     <TextView
         android:id="@+id/btrecuperar"
-        android:layout_width="290dp"
-        android:layout_height="40dp"
+        android:layout_width="197dp"
+        android:layout_height="33dp"
         android:layout_marginBottom="34dp"
+
         android:fontFamily="@font/alegreyaitalic"
         android:text="Recuperar contraseña"
+
+        android:background="@color/color_secundario"
+        android:fontFamily="@font/alegreyaitalic"
+        android:text="Recuperar contraseña"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"

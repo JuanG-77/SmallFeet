@@ -4,9 +4,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".CatalogoFragment"
     android:orientation="vertical"
     android:background="@color/fondo">
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CatalogoFragment">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -101,6 +106,7 @@
                         </TextView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
 
                 <androidx.cardview.widget.CardView
                     android:layout_height="wrap_content"
@@ -235,4 +241,16 @@
             </GridLayout>
         </ScrollView>
     </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buttonnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650dp"
+        android:background="@color/color_centro"
+        app:itemIconTint="@color/black"
+        app:menu="@menu/menu_navigation_bar">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
 </FrameLayout>
