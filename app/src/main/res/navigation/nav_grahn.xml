@@ -56,6 +56,12 @@
         <action
             android:id="@+id/action_catalogoFragment_to_ubicacionFragment"
             app:destination="@id/ubicacionFragment" />
+        <action
+            android:id="@+id/action_catalogoFragment_to_cuentaFragment"
+            app:destination="@id/cuentaFragment" />
+        <action
+            android:id="@+id/action_catalogoFragment_to_nina1Fragment2"
+            app:destination="@id/nina1Fragment" />
 
     </fragment>
     <fragment
