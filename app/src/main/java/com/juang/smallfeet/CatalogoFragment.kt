@@ -12,18 +12,25 @@ import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.juang.smallfeet.R.id.action_catalogoFragment_to_nina1Fragment
+import com.juang.smallfeet.view.adapter.CatalogoAdapter
 
 
 class CatalogoFragment : Fragment() {
 
-
+    lateinit var recyclerCat:RecyclerView
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_catalogo, container, false)
+        val view=inflater.inflate(R.layout.fragment_catalogo, container, false)
+        recyclerCat=view.findViewById(R.id.recyclerview)
+        val adapter=CatalogoAdapter()
+        recyclerCat.layoutManager=LinearLayoutManager(context)
+        recyclerCat.adapter=adapter
+
         return view
         val nombrecompleto=view.findViewById<EditText>(R.id.Nombrecompleto)
         val correocompleto=view.findViewById<EditText>(R.id.Correocompleto)
@@ -71,16 +78,14 @@ class CatalogoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val btm=view.findViewById<BottomNavigationView>(R.id.buttonnavigation)
+        val btm= view.findViewById<BottomNavigationView>(R.id.buttonnavigation)
         btm.setOnNavigationItemReselectedListener {
             when(it.itemId){
                 R.id.home -> findNavController().navigate(R.id.action_catalogoFragment_to_homeFragment)
                 R.id.perfil -> findNavController().navigate(R.id.action_catalogoFragment_to_cuentaFragment)
                 R.id.mapa -> findNavController().navigate(R.id.action_catalogoFragment_to_ubicacionFragment)
-            }
         }
     }
-
-
+    }
 
 }
