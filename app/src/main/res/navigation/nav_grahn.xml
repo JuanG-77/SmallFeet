@@ -31,37 +31,17 @@
         <action
             android:id="@+id/action_catalogoFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
-        <action
 
-            android:id="@+id/action_catalogoFragment_to_nina1Fragment"
-            app:destination="@id/nina1Fragment" />
-        <action
-            android:id="@+id/action_catalogoFragment_to_nina2Fragment"
-            app:destination="@id/nina2Fragment" />
-        <action
-            android:id="@+id/action_catalogoFragment_to_nina3Fragment"
-            app:destination="@id/nina3Fragment" />
-        <action
-            android:id="@+id/action_catalogoFragment_to_nino1Fragment"
-            app:destination="@id/nino1Fragment" />
-        <action
-            android:id="@+id/action_catalogoFragment_to_nino2Fragment"
-            app:destination="@id/nino2Fragment" />
-        <action
-            android:id="@+id/action_catalogoFragment_to_nino3Fragment"
-            app:destination="@id/nino3Fragment" />
 
-            android:id="@+id/action_catalogoFragment_to_cuentaFragment"
-            app:destination="@id/cuentaFragment" />
+
         <action
             android:id="@+id/action_catalogoFragment_to_ubicacionFragment"
             app:destination="@id/ubicacionFragment" />
         <action
             android:id="@+id/action_catalogoFragment_to_cuentaFragment"
             app:destination="@id/cuentaFragment" />
-        <action
-            android:id="@+id/action_catalogoFragment_to_nina1Fragment2"
-            app:destination="@id/nina1Fragment" />
+
+
 
     </fragment>
     <fragment
@@ -103,34 +83,4 @@
             android:id="@+id/action_cuentaFragment_to_ubicacionFragment"
             app:destination="@id/ubicacionFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/nina1Fragment"
-        android:name="com.juang.smallfeet.nina1Fragment"
-        android:label="fragment_nina1"
-        tools:layout="@layout/fragment_nina1" />
-    <fragment
-        android:id="@+id/nina2Fragment"
-        android:name="com.juang.smallfeet.nina2Fragment"
-        android:label="fragment_nina2"
-        tools:layout="@layout/fragment_nina2" />
-    <fragment
-        android:id="@+id/nina3Fragment"
-        android:name="com.juang.smallfeet.nina3Fragment"
-        android:label="fragment_nina3"
-        tools:layout="@layout/fragment_nina3" />
-    <fragment
-        android:id="@+id/nino1Fragment"
-        android:name="com.juang.smallfeet.nino1Fragment"
-        android:label="fragment_nino1"
-        tools:layout="@layout/fragment_nino1" />
-    <fragment
-        android:id="@+id/nino2Fragment"
-        android:name="com.juang.smallfeet.nino2Fragment"
-        android:label="fragment_nino2"
-        tools:layout="@layout/fragment_nino2" />
-    <fragment
-        android:id="@+id/nino3Fragment"
-        android:name="com.juang.smallfeet.nino3Fragment"
-        android:label="fragment_nino3"
-        tools:layout="@layout/fragment_nino3" />
 </navigation>
