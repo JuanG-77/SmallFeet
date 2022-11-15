@@ -35,58 +35,70 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.349" />
 
-    <TextView
+
+    <EditText
         android:id="@+id/tvnombre"
         android:layout_width="290dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="376dp"
         android:background="@drawable/estiloborde_editext"
+        android:ems="10"
         android:fontFamily="@font/alegreyaitalic"
         android:hint="Nombre Completo"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
 
-    <TextView
+    <EditText
         android:id="@+id/tvcorreo"
         android:layout_width="290dp"
         android:layout_height="50dp"
         android:background="@drawable/estiloborde_editext"
+        android:ems="10"
         android:fontFamily="@font/alegreyaitalic"
         android:hint="Correo Electrónico"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.552" />
-
-    <TextView
-        android:id="@+id/tvcontraseña"
-        android:layout_width="290dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="228dp"
-        android:background="@drawable/estiloborde_editext"
-        android:fontFamily="@font/alegreyaitalic"
-        android:hint="Password"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/tvfnacimiento"
-        android:layout_width="290dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="160dp"
-        android:background="@drawable/estiloborde_editext"
-        android:fontFamily="@font/alegreyaitalic"
-        android:hint="Fecha Nacimiento"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <EditText
+        android:id="@+id/tvcontrasena"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:background="@drawable/estiloborde_editext"
+        android:ems="10"
+        android:fontFamily="@font/alegreyaitalic"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <EditText
+        android:id="@+id/tvfnacimiento"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:background="@drawable/estiloborde_editext"
+        android:ems="10"
+        android:fontFamily="@font/alegreyaitalic"
+        android:hint="Fecha Nacimiento"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759" />
 
     <Button
         android:id="@+id/btregistro"

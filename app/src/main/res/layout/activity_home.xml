@@ -18,12 +18,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:defaultNavHost="true"
 
-        app:navGraph="@navigation/nav_grahn"
-        >
-
         app:navGraph="@navigation/nav_grahn">
-
-
     </fragment>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

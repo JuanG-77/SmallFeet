@@ -9,22 +9,14 @@
 
     <ImageView
         android:id="@+id/ivlogo"
-
-
-
         android:layout_width="505dp"
         android:layout_height="228dp"
-
         android:layout_marginTop="50dp"
         android:layout_marginBottom="344dp"
         android:background="#A3606D"
         app:layout_constraintBottom_toTopOf="@+id/btrecuperar"
         app:layout_constraintEnd_toEndOf="parent"
-
-
-
         app:layout_constraintHorizontal_bias="0.502"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.112"
