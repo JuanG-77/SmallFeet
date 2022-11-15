@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1068542774630",
+    "project_id": "smallfeet-c9098",
+    "storage_bucket": "smallfeet-c9098.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068542774630:android:8ab7369b4ec6d6d8528ca7",
+        "android_client_info": {
+          "package_name": "com.juang.smallfeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068542774630-2ia7190o0nc1m93n3gbk3k85see5pc6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkK6fEz2MNN6gI2O4jaIjdWcIo0rSbL9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068542774630-2ia7190o0nc1m93n3gbk3k85see5pc6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
