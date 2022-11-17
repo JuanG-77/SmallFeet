@@ -15,5 +15,10 @@
         android:title=""
         android:icon="@drawable/mapa">
     </item>
+    <item
+        android:id="@+id/cerrar"
+        android:title="Cerrar Sesión"
+        android:icon="@drawable/logout">
+    </item>
 
 </menu>
