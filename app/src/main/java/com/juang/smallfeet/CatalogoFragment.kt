@@ -15,12 +15,22 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import com.juang.smallfeet.view.adapter.CatalogoAdapter
 
 
 class CatalogoFragment : Fragment() {
 
     lateinit var recyclerCat:RecyclerView
+    lateinit var firebaseAuth: FirebaseAuth
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        firebaseAuth = Firebase.auth
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -84,8 +94,12 @@ class CatalogoFragment : Fragment() {
                 R.id.home -> findNavController().navigate(R.id.action_catalogoFragment_to_homeFragment)
                 R.id.perfil -> findNavController().navigate(R.id.action_catalogoFragment_to_cuentaFragment)
                 R.id.mapa -> findNavController().navigate(R.id.action_catalogoFragment_to_ubicacionFragment)
+                R.id.cerrar -> {
+                    firebaseAuth.signOut()
+                    findNavController().navigate(R.id.action_catalogoFragment_to_loginActivity)
+                    true
+                }
+            }
         }
     }
-    }
-
 }
