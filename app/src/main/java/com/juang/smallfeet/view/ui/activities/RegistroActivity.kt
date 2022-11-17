@@ -12,6 +12,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.juang.smallfeet.R
+import java.sql.DatabaseMetaData
 
 class RegistroActivity : AppCompatActivity() {
     lateinit var registroBotton:Button
