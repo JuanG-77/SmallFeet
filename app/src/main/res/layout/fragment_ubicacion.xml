@@ -9,9 +9,13 @@
     android:orientation="vertical"
     android:background="@color/fondo">
 
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".UbicacionFragment">
-
+    <fragment
+        android:id="@+id/map_view"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="661dp"
+        android:layout_marginTop="50dp">
+    </fragment>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,7 +37,6 @@
         </RelativeLayout>
     </LinearLayout>
 
-        android:text="UBICACION" />
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/buttonnavigation"
         android:layout_width="match_parent"
