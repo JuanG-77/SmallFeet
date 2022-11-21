@@ -2,6 +2,8 @@ package com.juang.smallfeet.view.adapter
 
 import android.content.ClipData
 import android.content.Context
+import android.icu.number.NumberFormatter.with
+import android.icu.number.NumberRangeFormatter.with
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
