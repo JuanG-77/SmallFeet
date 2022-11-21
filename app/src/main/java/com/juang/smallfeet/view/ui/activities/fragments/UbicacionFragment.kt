@@ -1,4 +1,4 @@
-package com.juang.smallfeet
+package com.juang.smallfeet.view.ui.activities.fragments
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -21,6 +21,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.juang.smallfeet.R
 
 
 class UbicacionFragment : Fragment(), OnMapReadyCallback {
@@ -93,7 +94,8 @@ class UbicacionFragment : Fragment(), OnMapReadyCallback {
         else{
             ActivityCompat.requestPermissions(this.requireActivity(),
             arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
-                REQUEST_CODE_LOCATION)
+                REQUEST_CODE_LOCATION
+            )
         }
     }
 

@@ -1,4 +1,4 @@
-package com.juang.smallfeet
+package com.juang.smallfeet.view.ui.activities.fragments
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -9,13 +9,11 @@ import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.ImageButton
 
-import android.widget.ImageView
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -23,6 +21,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
+import com.juang.smallfeet.R
 import com.juang.smallfeet.model.zapatos
 import com.juang.smallfeet.view.adapter.CatalogoAdapter
 import com.juang.smallfeet.view.adapter.OnBookItemClickListener

@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/catalogoFragment"
-        android:name="com.juang.smallfeet.CatalogoFragment"
+        android:name="com.juang.smallfeet.view.ui.activities.fragments.CatalogoFragment"
         android:label="fragment_catalogo"
         tools:layout="@layout/fragment_catalogo" >
         <action
@@ -48,7 +48,7 @@
     </fragment>
     <fragment
         android:id="@+id/comprasFragment"
-        android:name="com.juang.smallfeet.ComprasFragment"
+        android:name="com.juang.smallfeet.view.ui.activities.fragments.ComprasFragment"
         android:label="fragment_compras"
         tools:layout="@layout/fragment_compras" >
         <action
@@ -66,7 +66,7 @@
     </fragment>
     <fragment
         android:id="@+id/ubicacionFragment"
-        android:name="com.juang.smallfeet.UbicacionFragment"
+        android:name="com.juang.smallfeet.view.ui.activities.fragments.UbicacionFragment"
         android:label="fragment_ubicacion"
         tools:layout="@layout/fragment_ubicacion" >
         <action
@@ -81,7 +81,7 @@
     </fragment>
     <fragment
         android:id="@+id/cuentaFragment"
-        android:name="com.juang.smallfeet.CuentaFragment"
+        android:name="com.juang.smallfeet.view.ui.activities.fragments.CuentaFragment"
         android:label="fragment_cuenta"
         tools:layout="@layout/fragment_cuenta" >
         <action
