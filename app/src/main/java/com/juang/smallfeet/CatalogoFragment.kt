@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.ImageButton
 
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -20,16 +21,20 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
+import com.juang.smallfeet.model.zapatos
 import com.juang.smallfeet.view.adapter.CatalogoAdapter
+import com.juang.smallfeet.view.adapter.OnBookItemClickListener
 import com.juang.smallfeet.viewmodel.CatalogoViewModel
 
 
-class CatalogoFragment : Fragment() {
+class CatalogoFragment : Fragment(), OnBookItemClickListener {
 
     lateinit var recyclerCat:RecyclerView
     lateinit var firebaseAuth: FirebaseAuth
     lateinit var adapter: CatalogoAdapter
+    val database:FirebaseFirestore=FirebaseFirestore.getInstance()
     private val viewmodel by lazy { ViewModelProvider(this).get(CatalogoViewModel::class.java) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,7 +49,7 @@ class CatalogoFragment : Fragment() {
     ): View? {
         val view=inflater.inflate(R.layout.fragment_catalogo, container, false)
         recyclerCat=view.findViewById(R.id.recyclerview)
-        adapter=CatalogoAdapter(requireContext())
+        adapter=CatalogoAdapter(requireContext(), this)
         recyclerCat.layoutManager=LinearLayoutManager(context)
         recyclerCat.adapter=adapter
         observeData()
@@ -116,5 +121,24 @@ class CatalogoFragment : Fragment() {
                 }
             }
         }
+    }
+
+    override fun onItemClick(zapato: zapatos, position: Int) {
+        val titulo:String=zapato.titulo
+        val precio:String=zapato.precio
+        val tallas:String=zapato.tallas
+        val imagen:String=zapato.imagen
+        val dato= hashMapOf(
+            "titulo" to titulo,
+            "precio" to precio,
+            "tallas" to tallas,
+            "imagen" to imagen
+        )
+        database.collection("compras")
+            .document(titulo)
+            .set(dato)
+            .addOnSuccessListener {
+                Toast.makeText(context,"el producto fue añadido al carrito de compras", Toast.LENGTH_SHORT).show()
+            }
     }
 }
