@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".CatalogoFragment"
+    tools:context=".view.ui.activities.fragments.CatalogoFragment"
     android:orientation="vertical"
     android:background="@color/fondo">
 

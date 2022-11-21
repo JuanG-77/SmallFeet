@@ -10,7 +10,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId ""
+        applicationId "com.juang.smallfeet"
         minSdk 26
         targetSdk 33
         versionCode 1
