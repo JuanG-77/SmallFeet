@@ -9,6 +9,8 @@ import android.widget.EditText
 import android.widget.ImageButton
 
 import android.widget.ImageView
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 
 import androidx.navigation.fragment.findNavController
@@ -19,12 +21,15 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.juang.smallfeet.view.adapter.CatalogoAdapter
+import com.juang.smallfeet.viewmodel.CatalogoViewModel
 
 
 class CatalogoFragment : Fragment() {
 
     lateinit var recyclerCat:RecyclerView
     lateinit var firebaseAuth: FirebaseAuth
+    lateinit var adapter: CatalogoAdapter
+    private val viewmodel by lazy { ViewModelProvider(this).get(CatalogoViewModel::class.java) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,11 +42,12 @@ class CatalogoFragment : Fragment() {
     ): View? {
         val view=inflater.inflate(R.layout.fragment_catalogo, container, false)
         recyclerCat=view.findViewById(R.id.recyclerview)
-        val adapter=CatalogoAdapter()
+        adapter=CatalogoAdapter(requireContext())
         recyclerCat.layoutManager=LinearLayoutManager(context)
         recyclerCat.adapter=adapter
-
+        observeData()
         return view
+
         val nombrecompleto=view.findViewById<EditText>(R.id.Nombrecompleto)
         val correocompleto=view.findViewById<EditText>(R.id.Correocompleto)
         val direccioncompleto=view.findViewById<EditText>(R.id.Direccioncompleto)
@@ -85,6 +91,11 @@ class CatalogoFragment : Fragment() {
 
     }
 
+    fun observeData(){
+        viewmodel.catalogoData().observe(viewLifecycleOwner, Observer {
+            adapter.notifyDataSetChanged()
+        })
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

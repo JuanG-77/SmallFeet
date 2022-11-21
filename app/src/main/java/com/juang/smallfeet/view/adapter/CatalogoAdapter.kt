@@ -1,5 +1,7 @@
 package com.juang.smallfeet.view.adapter
 
+import android.content.ClipData
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,38 +10,38 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.juang.smallfeet.R
+import com.juang.smallfeet.model.zapatos
+import com.squareup.picasso.Picasso
 
-class CatalogoAdapter: RecyclerView.Adapter<CatalogoAdapter.ViewHolder>() {
+class CatalogoAdapter(private val context: Context): RecyclerView.Adapter<CatalogoAdapter.ViewHolder>() {
 
+    private var zapatoslista = mutableListOf<zapatos>()
 
+    fun setListData(data: MutableList<zapatos>){
+        zapatoslista = data
+    }
 
     inner class ViewHolder(ItemView:View): RecyclerView.ViewHolder(ItemView){
-        var itemimage: ImageView
-        var itemTitle: TextView
-        var itemprecio: TextView
-        var itemTallas: TextView
-
-        init {
-            itemimage=ItemView.findViewById(R.id.image)
-            itemTitle=ItemView.findViewById(R.id.Title)
-            itemprecio=ItemView.findViewById(R.id.precio)
-            itemTallas=ItemView.findViewById(R.id.Tallas)
-        }
+       fun binWew(zapato: zapatos){
+           itemView.findViewById<TextView>(R.id.Title).text = zapato.titulo
+           itemView.findViewById<TextView>(R.id.precio).text = zapato.precio
+           itemView.findViewById<TextView>(R.id.Tallas).text = zapato.tallas
+           Picasso.with(context).load(zapato.imagen).into(itemView.findViewById<ImageView>(R.id.image))
+       }
     }
-    val titles= arrayOf("Zapatos Unicornio", "Zapatos Rosa", "Zapatos Alumbrados", "Capitan America", "Zapatos Cars", "A la moda")
-    val precio= arrayOf("90.000", "120.000", "160.000", "130.000", "90.000", "120.000")
-    val Tallas= arrayOf("19, 20, 22", "22, 24, 25", "19, 20, 26", "19, 20, 26", "19, 20, 22", "22, 24, 25")
-    val image= arrayOf(R.drawable.primerproducto, R.drawable.segundoproducto, R.drawable.tercerproducto, R.drawable.cuartoproducto, R.drawable.quintoproducto, R.drawable.sextoproducto)
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
-        viewHolder.itemTitle.text=titles[i]
-        viewHolder.itemprecio.text=precio[i]
-        viewHolder.itemTallas.text=Tallas[i]
-        viewHolder.itemimage.setImageResource(image[i])
+        val zapato = zapatoslista[i]
+        viewHolder.binWew(zapato)
     }
 
     override fun getItemCount(): Int {
-        return titles.size
+        return if(zapatoslista.size > 0){
+            zapatoslista.size
+        }
+        else{
+            0
+        }
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
