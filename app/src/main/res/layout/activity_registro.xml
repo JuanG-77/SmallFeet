@@ -7,6 +7,7 @@
     tools:context=".view.ui.activities.RegistroActivity"
     android:background="@color/fondo">
 
+
     <ImageView
         android:id="@+id/ivlogoregistro"
         android:layout_width="408dp"

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/card_catalogo"
+    android:id="@+id/card_compras"
     android:layout_margin="12dp"
     app:cardBackgroundColor="@color/teal_700"
     app:cardCornerRadius="20dp"
@@ -69,12 +69,12 @@
 
         </TextView>
         <ImageButton
-            android:id="@+id/shopping"
+            android:id="@+id/eliminar"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="30dp"
             android:layout_toRightOf="@id/Title"
-            android:src="@drawable/ic_baseline_shopping_cart_24"
+            android:src="@drawable/ic_baseline_delete_24"
             android:background="@color/color_secundario">
 
         </ImageButton>
