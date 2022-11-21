@@ -9,31 +9,23 @@
     android:orientation="vertical"
     android:background="@color/fondo">
 
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".UbicacionFragment">
-
+    <fragment
+        android:id="@+id/map_view"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="661dp"
+        android:layout_marginTop="50dp"
+        tools:ignore="MissingClass">
+    </fragment>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
         android:orientation="vertical">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/theme_gradients_background">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/logotienda">
-            </ImageView>
-        </RelativeLayout>
+
     </LinearLayout>
 
-        android:text="UBICACION" />
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/buttonnavigation"
         android:layout_width="match_parent"

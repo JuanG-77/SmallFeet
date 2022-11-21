@@ -40,7 +40,9 @@
         <action
             android:id="@+id/action_catalogoFragment_to_cuentaFragment"
             app:destination="@id/cuentaFragment" />
-
+        <action
+            android:id="@+id/action_catalogoFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
 
 
     </fragment>
@@ -58,6 +60,9 @@
         <action
             android:id="@+id/action_comprasFragment_to_cuentaFragment"
             app:destination="@id/cuentaFragment" />
+        <action
+            android:id="@+id/action_comprasFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
     <fragment
         android:id="@+id/ubicacionFragment"
@@ -70,6 +75,9 @@
         <action
             android:id="@+id/action_ubicacionFragment_to_cuentaFragment"
             app:destination="@id/cuentaFragment" />
+        <action
+            android:id="@+id/action_ubicacionFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
     <fragment
         android:id="@+id/cuentaFragment"
@@ -82,5 +90,13 @@
         <action
             android:id="@+id/action_cuentaFragment_to_ubicacionFragment"
             app:destination="@id/ubicacionFragment" />
+        <action
+            android:id="@+id/action_cuentaFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.juang.smallfeet.view.ui.activities.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
 </navigation>

@@ -9,8 +9,7 @@
     android:orientation="vertical"
     android:background="@color/fondo">
 
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ComprasFragment">
+
 
 
     <LinearLayout
@@ -31,9 +30,43 @@
                 android:src="@drawable/logotienda">
             </ImageView>
         </RelativeLayout>
-    </LinearLayout>
 
-        android:text="COMPRAS" />
+        <TextView
+            android:id="@+id/preciototal"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:background="@color/color_secundario"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="40dp">
+        <TextView
+            android:id="@+id/realizar"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="200dp"
+            android:background="@color/teal_200"
+            android:text="Compra"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="40dp">
+
+       </TextView>
+
+        </TextView>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewcompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/buttonnavigation"
         android:layout_width="match_parent"

@@ -12,10 +12,19 @@ import android.widget.Button
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 
 class CuentaFragment : Fragment() {
 
+    lateinit var firebaseAuth: FirebaseAuth
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        firebaseAuth = Firebase.auth
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -58,11 +67,12 @@ class CuentaFragment : Fragment() {
             when(it.itemId){
                 R.id.home -> findNavController().navigate(R.id.action_cuentaFragment_to_homeFragment)
                 R.id.mapa -> findNavController().navigate(R.id.action_cuentaFragment_to_ubicacionFragment)
+                R.id.cerrar -> {
+                    firebaseAuth.signOut()
+                    findNavController().navigate(R.id.action_catalogoFragment_to_loginActivity)
+                    true
+                }
             }
         }
     }
-
-
-
-
 }
