@@ -10,6 +10,7 @@ import com.juang.smallfeet.model.zapatos
 class repo {
     fun getcatalogoData():LiveData<MutableList<zapatos>>{
         val mutabledata = MutableLiveData<MutableList<zapatos>>()
+
         FirebaseFirestore.getInstance().collection("zapatos").get()
             .addOnSuccessListener { result ->
                 val lisData = mutableListOf<zapatos>()

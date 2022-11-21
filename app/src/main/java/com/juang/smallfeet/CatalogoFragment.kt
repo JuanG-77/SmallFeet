@@ -95,9 +95,11 @@ class CatalogoFragment : Fragment() {
 
     fun observeData(){
         viewmodel.catalogoData().observe(viewLifecycleOwner, Observer {
+            adapter.setListData(it)
             adapter.notifyDataSetChanged()
         })
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
