@@ -34,7 +34,8 @@ class CatalogoFragment : Fragment(), OnBookItemClickListener {
     lateinit var firebaseAuth: FirebaseAuth
     lateinit var adapter: CatalogoAdapter
     val database:FirebaseFirestore=FirebaseFirestore.getInstance()
-    private val viewmodel by lazy { ViewModelProvider(this).get(CatalogoViewModel::class.java) }
+    private val viewmodel by lazy { ViewModelProvider(this).get(CatalogoViewModel::class.java)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,47 +54,6 @@ class CatalogoFragment : Fragment(), OnBookItemClickListener {
         recyclerCat.adapter=adapter
         observeData()
         return view
-
-        val nombrecompleto=view.findViewById<EditText>(R.id.Nombrecompleto)
-        val correocompleto=view.findViewById<EditText>(R.id.Correocompleto)
-        val direccioncompleto=view.findViewById<EditText>(R.id.Direccioncompleto)
-        val telefonocompleto=view.findViewById<EditText>(R.id.Telefonocompleto)
-        val btmeditnombre=view.findViewById<ImageButton>(R.id.nombreedit)
-        val btmeditcorreo=view.findViewById<ImageButton>(R.id.correoedit)
-        val btmeditdireccion=view.findViewById<ImageButton>(R.id.direccionedit)
-        val btmedittelefono=view.findViewById<ImageButton>(R.id.telefononedit)
-            nombrecompleto.isEnabled=false
-            correocompleto.isEnabled=false
-            direccioncompleto.isEnabled=false
-            telefonocompleto.isEnabled=false
-                btmeditnombre.setOnClickListener{
-                    if(nombrecompleto.isEnabled==false){
-                        nombrecompleto.isEnabled=true
-                    } else if(nombrecompleto.isEnabled==true){
-                        nombrecompleto.isEnabled=false
-                    }
-                }
-                btmeditcorreo.setOnClickListener{
-                    if(correocompleto.isEnabled==false){
-                        correocompleto.isEnabled=true
-                    } else if(correocompleto.isEnabled==true){
-                        correocompleto.isEnabled=false
-                    }
-                }
-                btmeditdireccion.setOnClickListener{
-                    if(direccioncompleto.isEnabled==false){
-                        direccioncompleto.isEnabled=true
-                    } else if(direccioncompleto.isEnabled==true){
-                        direccioncompleto.isEnabled=false
-                    }
-                }
-                btmedittelefono.setOnClickListener{
-                    if(telefonocompleto.isEnabled==false){
-                        telefonocompleto.isEnabled=true
-                    } else if(telefonocompleto.isEnabled==true){
-                        telefonocompleto.isEnabled=false
-                    }
-                }
 
     }
 

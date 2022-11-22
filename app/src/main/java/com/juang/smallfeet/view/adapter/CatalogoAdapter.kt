@@ -16,7 +16,8 @@ import com.juang.smallfeet.R
 import com.juang.smallfeet.model.zapatos
 import com.squareup.picasso.Picasso
 
-class CatalogoAdapter(private val context: Context,var clickListener: OnBookItemClickListener): RecyclerView.Adapter<CatalogoAdapter.ViewHolder>() {
+class CatalogoAdapter(private val context: Context,
+                      var clickListener: OnBookItemClickListener): RecyclerView.Adapter<CatalogoAdapter.ViewHolder>() {
 
     private var zapatoslista = mutableListOf<zapatos>()
 
